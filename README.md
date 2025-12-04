@@ -53,7 +53,7 @@ Get-Module -ListAvailable SyncFolders
 ```
 
 ---
-Usage
+## Usage
 Call the function with your source and destination directories:
 
 ```powershell
