@@ -40,7 +40,7 @@ C:\Program Files\WindowsPowerShell\Modules\SyncFolders\
 ```
 
 ---
-##Importing the Module
+## Importing the Module
 Once installed, import the module into your PowerShell session:
 
 ```powershell
@@ -61,7 +61,7 @@ Sync-Folders -SourceDir "C:\SourceParent" -DestinationDir "D:\DestinationParent"
 ```
 
 ---
-##Example Output
+## Example Output
 
 ```powershell
 Updating outdated file: D:\DestinationParent\Reports\report1.docx
