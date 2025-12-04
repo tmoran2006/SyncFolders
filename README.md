@@ -29,4 +29,48 @@ Clone or download this repository, then place the module in your PowerShell modu
 C:\Users\<YourUser>\Documents\WindowsPowerShell\Modules\SyncFolders\
     SyncFolders.psm1
     SyncFolders.psd1
+```
 
+Or install system-wide for all users:
+
+```powershell
+C:\Program Files\WindowsPowerShell\Modules\SyncFolders\
+    SyncFolders.psm1
+    SyncFolders.psd1
+```
+
+---
+Importing the Module
+Once installed, import the module into your PowerShell session:
+
+```powershell
+Import-Module SyncFolders
+```
+
+Verify it’s available:
+```powershell
+Get-Module -ListAvailable SyncFolders
+```
+
+---
+Usage
+Call the function with your source and destination directories:
+
+```powershell
+Sync-Folders -SourceDir "C:\SourceParent" -DestinationDir "D:\DestinationParent"
+```
+
+---
+Example Output
+
+```powershell
+Updating outdated file: D:\DestinationParent\Reports\report1.docx
+Destination file missing. Copying: D:\DestinationParent\Images\logo.png
+File is current: D:\DestinationParent\Notes\todo.txt
+-----------------------------------
+Sync Report:
+Files copied (new):    1
+Files updated (newer): 1
+Files skipped (current): 1
+-----------------------------------
+```
